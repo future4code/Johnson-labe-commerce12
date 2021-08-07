@@ -1,6 +1,11 @@
 import React from 'react';
-import './App.css';
+import styled from 'styled-components';
 import CardProdutos from './components/CardProdutos';
+
+const DivApp = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+`
 
 export default class App extends React.Component{
 
@@ -9,9 +14,9 @@ export default class App extends React.Component{
 
   render(){
     return(
-      <div>
-        <CardProdutos/>
-      </div>
+      <DivApp>
+        <CardProdutos nomeProduto="camisa"/>
+      </DivApp>
 
 
 
