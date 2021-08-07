@@ -32,14 +32,9 @@ export default class CardProdutos extends React.Component{
       return(
           <DivPrincipal>
               <DivCard>
-              <img src = {this.props.imagemProduto}>
-              </img>
-              <Nome>
-                  {this.props.nomeProduto}
-              </Nome>
-              <Preco>
-                  {this.props.precoProduto}
-              </Preco>
+              <img src = {this.props.imagemProduto}></img>
+              <Nome>{this.props.nomeProduto}</Nome>
+              <Preco>{this.props.precoProduto}</Preco>
               </DivCard>
           </DivPrincipal>
           

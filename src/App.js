@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import CardProdutos from './components/CardProdutos';
+import Carrinho from './components/Carrinho';
+import FiltroProdutos from './components/FiltroProduto';
 
 const DivApp = styled.div`
 display: grid;
-grid-template-columns: 1fr 2fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 height: 100%;
 width: 100%;
 `
@@ -35,9 +37,13 @@ ListaDeProdutos = () => this.state.produtos.map((item)=>{
 
   render(){
     return(
-      <div>
-   {this.ListaDeProdutos()}
-   </div>
+      <DivApp>
+        <FiltroProdutos>
+        </FiltroProdutos>
+        {this.ListaDeProdutos()}
+        <Carrinho>
+        </Carrinho>
+   </DivApp>
 
 
 

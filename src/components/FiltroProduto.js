@@ -8,15 +8,7 @@ export default class FiltroProdutos extends React.Component{
 
     render(){
       return(
-  
-  
-  
-  
-  
-  
-  
-  
-  
+        <div></div>
       )
     }
   }
